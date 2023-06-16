@@ -1,0 +1,219 @@
+#!/sbin/sh   
+#
+# MQ startup
+#
+HOST=`hostname`
+PATH=/sbin:/usr/sbin:/usr/bin
+export PATH
+
+hpux23()
+{
+	echo "Starting QMGR SCPMQSCM23"
+	/usr/bin/strmqm SCPMQSCM23
+	#echo "Starting Command Server for SCPMQSCM23"
+   	#/usr/bin/strmqcsv SCPMQSCM23
+
+	#echo "Starting QMGR SCPMQSWT23"
+	#/usr/bin/strmqm SCPMQSWT23
+	#echo "Starting Command Server for SCPMQSWT23"
+   	#/usr/bin/strmqcsv SCPMQSWT23
+
+	echo "Starting QMGR SCPMQVEN23"
+	/usr/bin/strmqm SCPMQVEN23
+	#echo "Starting Command Server for SCPMQVEN23"
+   	#/usr/bin/strmqcsv SCPMQVEN23
+
+	echo "Starting QMGR SCPMQDCA23"
+	/usr/bin/strmqm SCPMQDCA23
+	#echo "Starting Command Server for SCPMQDCA23"
+   	#/usr/bin/strmqcsv SCPMQDCA23
+
+	echo "Starting QMGR SCPMQARC23"
+	/usr/bin/strmqm SCPMQARC23
+	#echo "Starting Command Server for SCPMQARC23"
+   	#/usr/bin/strmqcsv SCPMQARC23
+
+	echo "Starting QMGR SCPMQABU23"
+	/usr/bin/strmqm SCPMQABU23
+	#echo "Starting Command Server for SCPMQABU23"
+   	#/usr/bin/strmqcsv SCPMQABU23
+
+	echo "Starting QMGR SCPMQMSG23"
+	/usr/bin/strmqm SCPMQMSG23
+	#echo "Starting Command Server for SCPMQMSG23"
+   	#/usr/bin/strmqcsv SCPMQMSG23
+
+}
+
+hpux24()
+{
+	echo "Starting QMGR SCPMQSCM24"
+	/usr/bin/strmqm SCPMQSCM24
+	#echo "Starting Command Server for SCPMQSCM24"
+   	#/usr/bin/strmqcsv SCPMQSCM24
+
+	#echo "Starting QMGR SCPMQSWT24"
+	#/usr/bin/strmqm SCPMQSWT24
+	#echo "Starting Command Server for SCPMQSWT24"
+   	#/usr/bin/strmqcsv SCPMQSWT24
+
+	echo "Starting QMGR SCPMQVEN24"
+	/usr/bin/strmqm SCPMQVEN24
+	#echo "Starting Command Server for SCPMQVEN24"
+   	#/usr/bin/strmqcsv SCPMQVEN24
+
+	echo "Starting QMGR SCPMQDCA24"
+	/usr/bin/strmqm SCPMQDCA24
+	#echo "Starting Command Server for SCPMQDCA24"
+   	#/usr/bin/strmqcsv SCPMQDCA24
+
+	echo "Starting QMGR SCPMQARC24"
+	/usr/bin/strmqm SCPMQARC24
+	#echo "Starting Command Server for SCPMQARC24"
+   	#/usr/bin/strmqcsv SCPMQARC24
+
+	echo "Starting QMGR SCPMQABU24"
+	/usr/bin/strmqm SCPMQABU24
+	#echo "Starting Command Server for SCPMQABU24"
+   	#/usr/bin/strmqcsv SCPMQABU24
+
+	echo "Starting QMGR SCPMQMSG24"
+	/usr/bin/strmqm SCPMQMSG24
+	#echo "Starting Command Server for SCPMQMSG24"
+   	#/usr/bin/strmqcsv SCPMQMSG24
+
+}
+
+hpux84()
+{
+	echo "Starting QMGR SCPMQMSG84"
+	/usr/bin/strmqm SCPMQMSG84
+
+}
+
+hpux25()
+{
+	echo "Starting QMGR SCTMQSCM25"
+	/usr/bin/strmqm SCTMQSCM25
+	#echo "Starting Command Server for SCTMQSCM25"
+	#/usr/bin/strmqcsv SCTMQSCM25
+
+	#echo "Starting QMGR SCTMQSWT25"
+	#/usr/bin/strmqm SCTMQSWT25
+	#echo "Starting Command Server for SCTMQSWT25"
+	#/usr/bin/strmqcsv SCTMQSWT25
+
+	echo "Starting QMGR SCTMQVEN25"
+	/usr/bin/strmqm SCTMQVEN25
+	#echo "Starting Command Server for SCTMQVEN25"
+	#/usr/bin/strmqcsv SCTMQVEN25
+
+	echo "Starting QMGR SCTMQMSG25"
+	/usr/bin/strmqm SCTMQMSG25
+	#echo "Starting Command Server for SCTMQMSG25"
+	#/usr/bin/strmqcsv SCTMQMSG25
+	
+	echo "Starting QMGR SCTMQDCA25"
+	/usr/bin/strmqm SCTMQDCA25
+	#echo "Starting Command Server for SCTMQDCA25"
+	#/usr/bin/strmqcsv SCTMQDCA25
+
+	echo "Starting QMGR SCTMQARC25"
+	/usr/bin/strmqm SCTMQARC25
+	#echo "Starting Command Server for SCTMQARC25"
+	#/usr/bin/strmqcsv SCTMQARC25
+
+	echo "Starting QMGR SCTMQABU25"
+	/usr/bin/strmqm SCTMQABU25
+	#echo "Starting Command Server for SCTMQABU25"
+	#/usr/bin/strmqcsv SCTMQABU25
+
+	echo "Starting QMGR SCQMQSCM25"
+	/usr/bin/strmqm SCQMQSCM25
+	#echo "Starting Command Server for SCQMQSCM25"
+	#/usr/bin/strmqcsv SCQMQSCM25
+
+	#echo "Starting QMGR SCQMQSWT25"
+	#/usr/bin/strmqm SCQMQSWT25
+	#echo "Starting Command Server for SCQMQSWT25"
+	#/usr/bin/strmqcsv SCQMQSWT25
+
+	echo "Starting QMGR SCQMQVEN25"
+	/usr/bin/strmqm SCQMQVEN25
+	#echo "Starting Command Server for SCQMQVEN25"
+	#/usr/bin/strmqcsv SCQMQVEN25
+
+	echo "Starting QMGR SCQMQMSG25"
+	/usr/bin/strmqm SCQMQMSG25
+	#echo "Starting Command Server for SCQMQMSG25"
+	#/usr/bin/strmqcsv SCQMQMSG25
+
+	echo "Starting QMGR SCQMQDCA25"
+	/usr/bin/strmqm SCQMQDCA25
+	#echo "Starting Command Server for SCQMQDCA25"
+	#/usr/bin/strmqcsv SCQMQDCA25
+
+	echo "Starting QMGR SCQMQARC25"
+	/usr/bin/strmqm SCQMQARC25
+	#echo "Starting Command Server for SCQMQARC25"
+	#/usr/bin/strmqcsv SCQMQARC25
+
+	echo "Starting QMGR SCQMQABU25"
+	/usr/bin/strmqm SCQMQABU25
+	#echo "Starting Command Server for SCQMQABU25"
+	#/usr/bin/strmqcsv SCQMQABU25
+
+	echo "Starting QMGR SCRMQSCM25"
+	/usr/bin/strmqm SCRMQSCM25
+	#echo "Starting Command Server for SCRMQSCM25"
+	#/usr/bin/strmqcsv SCRMQSCM25
+
+	#echo "Starting QMGR SCRMQSWT25"
+	#/usr/bin/strmqm SCRMQSWT25
+	#echo "Starting Command Server for SCRMQSWT25"
+	#/usr/bin/strmqcsv SCRMQSWT25
+
+	echo "Starting QMGR SCRMQVEN25"
+	/usr/bin/strmqm SCRMQVEN25
+	#echo "Starting Command Server for SCRMQVEN25"
+	#/usr/bin/strmqcsv SCRMQVEN25
+
+	echo "Starting QMGR SCRMQMSG25"
+	/usr/bin/strmqm SCRMQMSG25
+	#echo "Starting Command Server for SCRMQMSG25"
+	#/usr/bin/strmqcsv SCRMQMSG25
+
+	echo "Starting QMGR SCRMQDCA25"
+	/usr/bin/strmqm SCRMQDCA25
+	#echo "Starting Command Server for SCRMQDCA25"
+	#/usr/bin/strmqcsv SCRMQDCA25
+
+	echo "Starting QMGR SCRMQARC25"
+	/usr/bin/strmqm SCRMQARC25
+	#echo "Starting Command Server for SCRMQARC25"
+	#/usr/bin/strmqcsv SCRMQARC25
+
+	echo "Starting QMGR SCRMQABU25"
+	/usr/bin/strmqm SCRMQABU25
+	#echo "Starting Command Server for SCRMQABU25"
+	#/usr/bin/strmqcsv SCRMQABU25
+
+}
+
+if   [ "$HOST" = "hpux23" ]
+then
+   hpux23
+elif [ "$HOST" = "hpux24" ]
+then
+   hpux24
+elif [ "$HOST" = "hpux84" ]
+then
+   hpux84
+elif [ "$HOST" = "hpux25" ]
+then
+   hpux25
+else
+   echo "This script cannot be run on $HOST"
+   echo " "
+   exit
+fi

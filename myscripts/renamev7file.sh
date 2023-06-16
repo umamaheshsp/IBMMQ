@@ -1,0 +1,10 @@
+#AMQ18252.0.FMT: 11:09:51.000602    18252.3           :           PID : 18252 Process : amqzlaa0 (64-bit)
+
+#cat process.out | while read fname tm tidpid colon1 PID colon2 pid str1 colon3 process other
+cat process.out|awk -F"PID" '{print $2}'|while read colon2 pid str1 colon3 process other
+do
+        echo "$fname mv AMQ${pid}.0.FMT ${process}_AMQ${pid}.0.FMT"
+        mv AMQ${pid}.0.FMT ${process}_AMQ${pid}.0.FMT
+        echo "$fname mv AMQ${pid}.1.FMT ${process}_AMQ${pid}.1.FMT"
+        mv AMQ${pid}.1.FMT ${process}_AMQ${pid}.1.FMT
+done
